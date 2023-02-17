@@ -9,6 +9,7 @@
   "importOrder": [
     "react",
     "react-native",
+    "react-native/(.*)$",
     "^@assets/(.*)$",
     "^@core/(.*)$",
     "^@components/(.*)$",

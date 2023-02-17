@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.71.3"
+    "react-native": "0.71.3",
+    "react-native-svg": "^13.8.0"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": "eslint --fix",
@@ -43,6 +44,7 @@
     "lint-staged": "^13.1.2",
     "metro-react-native-babel-preset": "0.73.7",
     "prettier": "^2.8.4",
+    "react-native-svg-transformer": "^1.0.0",
     "react-test-renderer": "18.2.0",
     "typescript": "4.8.4"
   },

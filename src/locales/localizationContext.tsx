@@ -1,6 +1,6 @@
-import { I18n } from 'i18n-js'
 import React, { type FC, type ReactNode, createContext } from 'react'
 import { NativeModules, Platform } from 'react-native'
+import { I18n } from 'i18n-js'
 import en from './values/en'
 
 const languages = { en }

@@ -2,6 +2,7 @@ import React from 'react'
 import { DefaultTheme, NavigationContainer, type Theme } from '@react-navigation/native'
 import { type NativeStackNavigationOptions, createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from '@screens/home'
+import Second from '@screens/second'
 import { setNavigator } from './apis'
 import type { StackParams } from './types'
 
@@ -16,6 +17,7 @@ const AppStack = () => {
     <NavigationContainer theme={NavigationTheme} ref={setNavigator}>
       <NavigationStack.Navigator screenOptions={NavigationOptions} initialRouteName="Home">
         <NavigationStack.Screen name="Home" component={Home} />
+        <NavigationStack.Screen name="Second" component={Second} />
       </NavigationStack.Navigator>
     </NavigationContainer>
   )

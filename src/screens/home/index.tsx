@@ -7,7 +7,7 @@ type Props = NativeStackScreenProps<StackParams, 'Home'>
 
 const Home: FC<Props> = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Text>Hello</Text>
     </View>
   )

@@ -2,6 +2,7 @@ import { type Middleware, configureStore } from '@reduxjs/toolkit'
 import { logger } from 'redux-logger'
 import { FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE, persistStore } from 'redux-persist'
 import createSagaMiddleware from 'redux-saga'
+import baseReducer from './reducers/base'
 import rootSaga from './sagas'
 
 const sagaMiddleware = createSagaMiddleware()
@@ -11,11 +12,13 @@ if (__DEV__) {
 }
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    base: baseReducer,
+  },
   middleware: (getDefaultMiddleware) => {
     return [
       ...getDefaultMiddleware({
-        thunk: true,
+        thunk: false,
         serializableCheck: {
           ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
         },

@@ -7,8 +7,10 @@
   "printWidth": 120,
   "endOfLine": "lf",
   "importOrder": [
-    "react",
-    "react-native",
+    "^react",
+    "^react-native",
+    "^react-native/(.*)$",
+    "<THIRD_PARTY_MODULES>",
     "^@assets/(.*)$",
     "^@core/(.*)$",
     "^@components/(.*)$",

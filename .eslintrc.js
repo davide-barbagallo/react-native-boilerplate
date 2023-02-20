@@ -33,6 +33,7 @@ module.exports = {
         'import/newline-after-import': 'error',
         'import/no-shadow': 'off',
         'react-hooks/exhaustive-deps': 'off',
+        '@typescript-eslint/consistent-type-imports': 'error',
         curly: 'off',
       },
     },

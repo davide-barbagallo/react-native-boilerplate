@@ -14,7 +14,9 @@ const Home: FC<Props> = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{t('hello')}</Text>
+      <Text style={styles.text} testID="test-text">
+        {t('hello')}
+      </Text>
       <Button onPress={() => navigation.navigate('Second', { data: 'Data' })} title={t('navigate')} />
     </View>
   )
